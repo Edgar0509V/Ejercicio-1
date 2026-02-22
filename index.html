@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Newsletter</title>
+    <link
+      rel="icon"
+      href="images/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="newsletter">
+        <div class="div-1">
+            <img src="images/logo.svg" alt="">
+            <h1>Join our newsletter</h1>
+            <p>Keep up with our latest collections, exclusive deals, and special offers!
+                We introduce a new collection every week, so stay tuned to snag the
+                hottest items just for you.
+            </p>
+        </div>
+        <div class="div-2">
+            <form action="" id="formulario">
+            <input type="email" id="email" name="email" placeholder="Enter your email address" class="correo" >
+            <small class="error"></small>
+            <button type="submit" value="Subscribe-now" class="boton">Subscribe now</button>
+            </form>
+            <p>Your email is 100% confidential and won't send you any spam.</p>
+        </div>
+    </section>
+</body>
+<script>
+    document
+      .getElementById("formulario")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+        let valido = true;
+
+        function mostrarError(campo, mensaje) {
+          campo.querySelector(".error").textContent = mensaje;
+          const input = campo.querySelector("input", "textarea");
+          if (input) {
+            input.classList.add("error-input");
+            valido = false;
+          }
+        }
+        function limpiarError(campo) {
+          campo.querySelector(".error").textContent = "";
+          const input = campo.querySelector("input", "textarea");
+          if (input) {
+            input.classList.remove("error-input");
+          }
+        }
+
+        //Validar si hay texto en los input
+        const email = document.getElementById("email").parentElement;
+        const emailValue = email.querySelector("input").value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailValue === "") {
+          mostrarError(email, "This field is required");
+        } else if (!emailRegex.test(emailValue)) {
+          mostrarError(email, "Please enter a valid email address");
+        } else {
+          limpiarError(email);
+        }
+
+        if (valido) {
+          alert("Formulario llenado correctamente");
+        }
+      });
+</script>
+</html>
