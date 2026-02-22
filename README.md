@@ -8,21 +8,21 @@
 ---
 
 ## 📌 Descripción
-(Escribe aquí en qué consiste tu proyecto de forma breve)
+El trabajo consiste en crear un index en la cual tenga un formulario que pida el correo electronico, se tiene que usar input y button para realizarlo. Ademas, debe adaptarse para versiones de tabletas y móviles
 
 ---
 
 ## 🚀 Tecnologías utilizadas
 - HTML  
 - CSS  
-- Otro: 
+- JavaScript 
 
 ---
 
 ## 🔗 Enlace al proyecto
-Repositorio en GitHub: [Pega aquí tu enlace]  
+Repositorio en GitHub: [https://github.com/Edgar0509V/Ejercicio-1.git]  
 Deploy: [Pega aquí el deploy de GitHub Pages]
 ---
 
 ## 📝 Reflexión
-(Escribe aquí unas líneas sobre lo que aprendiste, las dificultades que tuviste y cómo las solucionaste)
+Aprendi a cómo configurar el boton como submit en vez de un a, ademas de diferencias entre el id, value, name, etc.
