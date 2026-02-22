@@ -21,7 +21,7 @@ El trabajo consiste en crear un index en la cual tenga un formulario que pida el
 
 ## 🔗 Enlace al proyecto
 Repositorio en GitHub: [https://github.com/Edgar0509V/Ejercicio-1.git]  
-Deploy: [Pega aquí el deploy de GitHub Pages]
+Deploy: [https://edgar0509v.github.io/Ejercicio-1/]
 ---
 
 ## 📝 Reflexión
